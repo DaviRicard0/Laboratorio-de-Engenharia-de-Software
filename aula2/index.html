@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            /* Apenas para centralizar o form na página */
+            margin: 0 auto;
+            width: 400px;
+            /* Para ver as bordas do formulário */
+            padding: 1em;
+            border: 1px solid #ccc;
+            border-radius: 1em;
+        }
+
+        div {
+            display: grid;
+        }
+
+        button {
+            font-size: 16px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="fruit" >Digite o nome da fruta:</label>
+            <input id="fruit" name="fruit" type="text">
+        </div>
+        <hr>
+        <div>
+            <button type="button" class="add-fruit">Adicionar</button>
+        </div>
+    </form>
+    <fieldset>
+        <legend>Lista de frutas</legend>
+        <ul class="list-fruit">
+        </ul>
+    </fieldset>
+    <script src="./scripts.js"></script>
+</body>
+</html>
