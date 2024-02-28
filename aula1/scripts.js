@@ -6,7 +6,7 @@
  * por visitar esta página”.
 */
 
-/*(()=>{
+const tipoDeDado = ()=>{
     const data = prompt("Informe algo:");
 
     if(confirm("Deseja verificar o tipo do dado informado?")){
@@ -14,7 +14,7 @@
     }else{
         alert("Obrigado por visitar esta página")
     }
-})()*/
+}
 
 /**
  * 
@@ -23,7 +23,7 @@
  * de alerta se o número é ou não primo.
 */
 
-/*(()=>{
+const primo = ()=>{
     const number = parseInt(prompt("Informe um número inteiro positivo:"));
     
     const isPrimo = ((num) => {
@@ -35,7 +35,7 @@
     })(number);
 
     alert(`O número ${number} ${isPrimo ? "" : "não"} é primo`);
-})()*/
+}
 
 /**
  * Implemente um script JavaScript que solicite ao usuário um número inteiro
@@ -43,13 +43,13 @@
  * de alerta se o número é par ou ímpar.
 */
 
-/*(()=>{
+const parOuImpar =()=>{
     const number = parseInt(prompt("Informe um número inteiro positivo:"));
     
     const par = ((num) => num % 2 === 0)(number);
 
     alert(`O número ${number} é ${par ? "par" : "ímpar"}`);
-})()*/
+}
 
 /**
  * Implemente um script JavaScript que solicite ao usuário um número inteiro
@@ -57,7 +57,7 @@
  * mesmo e exiba o resultado em uma janela de alerta.
  */
 
-(()=>{
+const fatorial = ()=>{
     const number = parseInt(prompt("Informe um número inteiro positivo:"));
     
     const fatorial = ((num) =>{
@@ -72,4 +72,11 @@
     })(number);
 
     alert(`O fatorial de ${number} é ${fatorial}`);
-})()
+}
+
+(()=>{
+    btnTipoDoDado.onclick = tipoDeDado;
+    btnPrimo.onclick = primo;
+    btnParImpar.onclick = parOuImpar;
+    btnFatorial.onclick = fatorial;
+})();
