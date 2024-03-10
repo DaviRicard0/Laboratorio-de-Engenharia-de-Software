@@ -13,12 +13,7 @@
         ex2.textContent = new Date()
             .toLocaleTimeString('pt-br');
         funcaoTempo();
-        console.log('hi')
     }, 1000)})();
-    /*setInterval(() => {
-        ex2.textContent = new Date()
-            .toLocaleTimeString('pt-br');
-    }, 1000);*/
 
     /**
      * @description Exercício 3
