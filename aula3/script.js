@@ -9,10 +9,16 @@
     /**
      * @description Exercício 2
      */
-    setInterval(() => {
+    (function funcaoTempo() {setTimeout(() => {
         ex2.textContent = new Date()
             .toLocaleTimeString('pt-br');
-    }, 100);
+        funcaoTempo();
+        console.log('hi')
+    }, 1000)})();
+    /*setInterval(() => {
+        ex2.textContent = new Date()
+            .toLocaleTimeString('pt-br');
+    }, 1000);*/
 
     /**
      * @description Exercício 3
